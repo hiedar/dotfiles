@@ -12,6 +12,7 @@
   co = checkout
   pf = push --force-with-lease
   st = status
+  re = remote -v
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
