@@ -38,6 +38,9 @@ endif
 
 filetype plugin indent on
 
+" search with ignoring case
+set ignorecase
+
 augroup vimrcEx
   autocmd!
 
