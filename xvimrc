@@ -1,3 +1,7 @@
 " search with ignoring case
 set ignorecase
 
+" Numbers
+set number
+set relativenumber
+
