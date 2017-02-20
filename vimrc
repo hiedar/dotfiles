@@ -25,7 +25,7 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 " color theme
-color dracula
+" color dracula
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
