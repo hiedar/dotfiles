@@ -46,3 +46,4 @@ _load_settings "$HOME/.zsh/configs"
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 export PATH="$HOME/.bin:$PATH"
+eval "$(rbenv init - --no-rehash)"
