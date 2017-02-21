@@ -8,6 +8,7 @@ set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitigno
 set history=50
 set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
+set hlsearch      " high light search result
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
@@ -25,7 +26,7 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 " color theme
-" color dracula
+color dracula
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -114,7 +115,8 @@ function! InsertTabWrapper()
 endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
-inoremap <silent> jj <ESC>
+inoremap <silent> jk <ESC>
+inoremap <silent> ｊｋ <ESC>
 
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
@@ -147,6 +149,24 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+cnoremap <C-a> <Home>
+" 一文字戻る
+cnoremap <C-b> <Left>
+" " カーソルの下の文字を削除
+cnoremap <C-d> <Del>
+" " 行末へ移動
+cnoremap <C-e> <End>
+" " 一文字進む
+cnoremap <C-f> <Right>
+" " コマンドライン履歴を一つ進む
+cnoremap <C-n> <Down>
+" " コマンドライン履歴を一つ戻る
+cnoremap <C-p> <Up>
+" " 前の単語へ移動
+cnoremap <M-b> <S-Left>
+" " 次の単語へ移動
+cnoremap <M-f> <S-Right>
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1

@@ -7,3 +7,6 @@ setopt extendedglob
 
 # Allow [ or ] whereever you want
 unsetopt nomatch
+
+# Change wordchars
+WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"

@@ -1,0 +1,8 @@
+# handy aliases
+alias scm="cd ~/Developer/scm"
+alias sam="cd ~/Developer/sample"
+
+# tmux
+alias tmks="tmux kill-session"
+alias tmls="tmux list-sessions"
+

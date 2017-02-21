@@ -14,7 +14,7 @@
   st = status
   re = remote -v
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/hiedar/.gitignore
   autocrlf = input
 [merge]
   ff = only

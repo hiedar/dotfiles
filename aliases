@@ -19,6 +19,3 @@ alias path='echo $PATH | tr -s ":" "\n"'
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
 
-# local
-alias scm="cd $HOME/Developer/scm"
-alias sam="cd $HOME/Developer/sample"
