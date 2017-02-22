@@ -18,6 +18,8 @@ nmap n nzz
 nmap N Nzz
 nmap * *zz
 nmap # #zz
+nmap H Hzz
+nmap L Lzz
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.

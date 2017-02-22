@@ -5,3 +5,10 @@ set ignorecase
 set number
 set relativenumber
 
+nmap n nzz
+nmap N Nzz
+nmap * *zz
+nmap # #zz
+nmap H Hzz
+nmap L Lzz
+
