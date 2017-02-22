@@ -1,0 +1,9 @@
+" http://itchyny.hatenablog.com/entry/2014/12/25/090000
+" handy remap
+nnoremap Y y$
+
+" handy showmatch
+set showmatch
+set matchtime=1
+
+
