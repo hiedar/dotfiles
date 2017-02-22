@@ -1,0 +1,5 @@
+" lightline
+" https://github.com/itchyny/lightline.vim
+Plug 'itchyny/lightline.vim'
+
+
