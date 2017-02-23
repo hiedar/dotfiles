@@ -13,6 +13,9 @@ noremap k gk
 noremap <C-l>   zz
 noremap <C-h>   ^
 
+" auto cr を解除
+set tw=0
+
 " handy showmatch
 set showmatch
 set matchtime=1
