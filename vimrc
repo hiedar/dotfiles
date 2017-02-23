@@ -21,6 +21,12 @@ nmap # #zz
 nmap H Hzz
 nmap L Lzz
 
+noremap j gj
+noremap k gk
+noremap <C-l>   zz
+noremap <C-h>   ^
+noremap <C-l>   $
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -145,12 +151,6 @@ let g:html_indent_tags = 'li\|p'
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
-
-" Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
 
 cnoremap <C-a> <Home>
 " 一文字戻る
