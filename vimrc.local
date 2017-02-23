@@ -12,7 +12,6 @@ noremap j gj
 noremap k gk
 noremap <C-l>   zz
 noremap <C-h>   ^
-noremap <C-l>   $
 
 " handy showmatch
 set showmatch
