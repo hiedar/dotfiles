@@ -1,6 +1,7 @@
 # http://blog.monochromegane.com/blog/2013/12/12/tmux-no-prefix/
 # move between panes
-bind -n C-o select-pane -t :.+
+bind -n ø select-pane -t :.+
+bind -n S-s select-pane -t :.+
 
 # maximize current pane
 bind -n M-f resize-pane -Z
