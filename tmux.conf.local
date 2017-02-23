@@ -1,0 +1,3 @@
+# http://blog.monochromegane.com/blog/2013/12/12/tmux-no-prefix/
+# move between panes
+bind -n C-o select-pane -t :.+
