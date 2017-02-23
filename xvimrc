@@ -5,6 +5,10 @@ set ignorecase
 set number
 set relativenumber
 
+" clipboard
+set clipboard=unnamed
+
+" keyremap
 nmap n nzz
 nmap N Nzz
 nmap * *zz
@@ -16,4 +20,4 @@ nmap L Lzz
 " noremap k gk
 noremap <C-l>   zz
 noremap <C-h>   ^
-
+nnoremap Y y$
