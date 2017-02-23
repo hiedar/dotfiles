@@ -14,19 +14,6 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set clipboard+=unnamed
 
-nmap n nzz
-nmap N Nzz
-nmap * *zz
-nmap # #zz
-nmap H Hzz
-nmap L Lzz
-
-noremap j gj
-noremap k gk
-noremap <C-l>   zz
-noremap <C-h>   ^
-noremap <C-l>   $
-
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")

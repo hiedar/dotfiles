@@ -1,6 +1,18 @@
 " http://itchyny.hatenablog.com/entry/2014/12/25/090000
 " handy remap
 nnoremap Y y$
+nmap n nzz
+nmap N Nzz
+nmap * *zz
+nmap # #zz
+nmap H Hzz
+nmap L Lzz
+
+noremap j gj
+noremap k gk
+noremap <C-l>   zz
+noremap <C-h>   ^
+noremap <C-l>   $
 
 " handy showmatch
 set showmatch
