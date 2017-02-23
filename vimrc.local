@@ -12,6 +12,14 @@ noremap j gj
 noremap k gk
 noremap <C-l>   zz
 noremap <C-h>   ^
+noremap ; :
+noremap : ;
+noremap ' "
+noremap " '
+inoremap ; :
+inoremap : ;
+inoremap ' "
+inoremap " '
 
 " auto cr を解除
 set tw=0
