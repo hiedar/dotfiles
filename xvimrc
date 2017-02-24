@@ -25,7 +25,7 @@ noremap ; :
 noremap : ;
 noremap ' "
 noremap " '
-inoremap ; :
-inoremap : ;
-inoremap ' "
-inoremap " '
+noremap! : ;
+noremap! ; :
+noremap! " '
+noremap! ' "

@@ -16,10 +16,10 @@ noremap ; :
 noremap : ;
 noremap ' "
 noremap " '
-inoremap ; :
-inoremap : ;
-inoremap ' "
-inoremap " '
+noremap! ; :
+noremap! : ;
+noremap! ' "
+noremap! " '
 
 " auto cr を解除
 set tw=0
