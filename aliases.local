@@ -1,6 +1,7 @@
 # handy aliases
 alias scm="cd ~/Developer/scm"
 alias sam="cd ~/Developer/sample"
+alias p="pbcopy"
 
 # tmux
 alias tmks="tmux kill-session"
