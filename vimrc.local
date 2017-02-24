@@ -8,8 +8,6 @@ nmap # #zz
 nmap H Hzz
 nmap L Lzz
 
-noremap j gj
-noremap k gk
 noremap <C-l>   zz
 noremap <C-h>   ^
 noremap ; :
