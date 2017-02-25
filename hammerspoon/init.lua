@@ -87,7 +87,7 @@ remapKey({"ctrl", "option"}, "m", keyCode("return", {"option"}))
 -- remapKey({'ctrl'}, 'd', keyCode('forwarddelete')) -- delete
 --
 -- -- Escape
-remapKey({"ctrl"}, "g", keyCode("escape"))
+-- remapKey({"ctrl"}, "g", keyCode("escape"))
 --
 -- -- Undo
 remapKey({'ctrl'}, "/", keyCode("z", {'cmd'}))
@@ -96,3 +96,52 @@ remapKey({'ctrl'}, "/", keyCode("z", {'cmd'}))
 hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
   hs.execute("open -a iTerm; osascript -e 'tell application \"System Events\" to key code 102'")
 end)
+
+
+local VK_G = 0x5
+local VK_ESC = 0x35
+
+-- Secret key codes not included in hs.keycodes.map
+local VK_QUOTE = 0x27
+local VK_SEMICOLON = 0x29
+
+-- --local log = hs.logger.new("keyhook","debug")
+function flagsMatches(flags, modifiers)
+    local set = {}
+    for _, k in ipairs(modifiers) do set[string.lower(k)] = true end
+    for _, k in ipairs({"fn", "cmd", "ctrl", "alt", "shift"}) do
+        if set[k] ~= flags[k] then return false end
+    end
+    return true
+end
+
+myKeyboardFilter = hs.eventtap.new({
+    hs.eventtap.event.types.keyDown,
+    hs.eventtap.event.types.keyUp
+}, function(event)
+    local c = event:getKeyCode()
+    local f = event:getFlags()
+    if c == VK_SEMICOLON then
+        -- swap semicolon and colon
+        if flagsMatches(f, {"shift"}) then
+            event:setFlags({})
+        elseif flagsMatches(f, {}) then
+            event:setFlags({shift=true})
+        end
+    elseif c == VK_QUOTE then
+        -- swap single quote and doble quote
+        if flagsMatches(f, {"shift"}) then
+            event:setFlags({})
+        elseif flagsMatches(f, {}) then
+            event:setFlags({shift=true})
+        end
+    elseif c == VK_G then
+        -- ctrl+g => Esc
+        if flagsMatches(f, {"ctrl"}) then
+            event:setKeyCode(VK_ESC)
+            event:setFlags({})
+        end
+    end
+end)
+myKeyboardFilter:start()
+

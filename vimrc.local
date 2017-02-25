@@ -10,14 +10,6 @@ nmap L Lzz
 
 noremap <C-l>   zz
 noremap <C-h>   ^
-noremap ; :
-noremap : ;
-noremap ' "
-noremap " '
-noremap! ; :
-noremap! : ;
-noremap! ' "
-noremap! " '
 
 " auto cr を解除
 set tw=0

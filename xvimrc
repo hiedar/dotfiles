@@ -21,11 +21,3 @@ nmap L Lzz
 noremap <C-l>   zz
 noremap <C-h>   ^
 nnoremap Y y$
-noremap ; :
-noremap : ;
-noremap ' "
-noremap " '
-noremap! : ;
-noremap! ; :
-noremap! " '
-noremap! ' "
