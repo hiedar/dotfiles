@@ -100,10 +100,15 @@ end)
 
 local VK_G = 0x5
 local VK_ESC = 0x35
+local VK_H = 0x4
+local VK_D = 0x2
 
 -- Secret key codes not included in hs.keycodes.map
 local VK_QUOTE = 0x27
 local VK_SEMICOLON = 0x29
+local VK_BACKSPACE = 0x33
+local VK_DELETE = 0x75
+local VK_FN = 0x3f
 
 -- --local log = hs.logger.new("keyhook","debug")
 function flagsMatches(flags, modifiers)
@@ -134,6 +139,18 @@ myKeyboardFilter = hs.eventtap.new({
             event:setFlags({})
         elseif flagsMatches(f, {}) then
             event:setFlags({shift=true})
+        end
+    elseif c == VK_H then
+        -- ctrl+h => backward delete
+        if flagsMatches(f, {"ctrl"}) then
+            event:setKeyCode(VK_BACKSPACE)
+            event:setFlags({})
+        end
+    elseif c == VK_D then
+        -- ctrl+d => foreward delete
+        if flagsMatches(f, {"ctrl"}) then
+            event:setKeyCode(VK_DELETE)
+            event:setFlags({})
         end
     elseif c == VK_G then
         -- ctrl+g => Esc
