@@ -1,6 +1,6 @@
 # http://blog.monochromegane.com/blog/2013/12/12/tmux-no-prefix/
 # move between panes
-bind -n ¬ select-pane -t :.+
+bind -n ø select-pane -t :.+
 bind -n S-s select-pane -t :.+
 
 # maximize current pane
@@ -8,7 +8,7 @@ bind -n M-f resize-pane -Z
 
 # move between window
 # http://qiita.com/ssh0/items/b423d65f723eecb81527
-bind -n … next-window
+bind -n ¬ next-window
 bind -n ˙ previous-window
 
 # アクティブなペインを目立たせる
