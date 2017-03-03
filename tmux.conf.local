@@ -16,4 +16,7 @@ bind -n ˙ previous-window
 set -g pane-active-border-fg white
 set -g pane-active-border-bg blue
 
-
+# マウス
+set-option -g mouse on
+bind-key -t vi-copy WheelUpPane scroll-up
+bind-key -t vi-copy WheelDownPane scroll-down
