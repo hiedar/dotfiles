@@ -4,7 +4,8 @@ bind -n ø select-pane -t :.+
 bind -n S-s select-pane -t :.+
 
 # maximize current pane
-bind -n M-f resize-pane -Z
+# bind -n M-f resize-pane -Z
+bind f resize-pane -Z
 
 # move between window
 # http://qiita.com/ssh0/items/b423d65f723eecb81527
