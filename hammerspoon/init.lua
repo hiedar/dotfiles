@@ -109,6 +109,8 @@ local VK_SEMICOLON = 0x29
 local VK_BACKSPACE = 0x33
 local VK_DELETE = 0x75
 local VK_FN = 0x3f
+local VK_ESC = 0x35
+local VK_GRAV = 0x32
 
 -- --local log = hs.logger.new("keyhook","debug")
 function flagsMatches(flags, modifiers)
@@ -156,6 +158,15 @@ myKeyboardFilter = hs.eventtap.new({
         -- ctrl+g => Esc
         if flagsMatches(f, {"ctrl"}) then
             event:setKeyCode(VK_ESC)
+            event:setFlags({})
+        end
+    elseif c == VK_ESC then
+        -- ctrl+g => Esc
+        if flagsMatches(f, {"shift"}) then
+            event:setKeyCode(VK_GRAV)
+            event:setFlags({shift=true})
+        elseif flagsMatches(f, {}) then
+            event:setKeyCode(VK_GRAV)
             event:setFlags({})
         end
     end
