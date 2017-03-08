@@ -51,7 +51,7 @@ function tmux_automatically_attach_session()
                 # on OS X force tmux's default command
                 # to spawn a shell in the user's namespace
                 tmux_config=$(cat $HOME/.tmux.conf <(echo 'set-option -g default-command "reattach-to-user-namespace -l $SHELL"'))
-                tmux -f <(echo "$tmux_config") new-session -n routine \; selectp -t 1 \; send-keys cd\ ~/dotfiles C-m C-l\; splitw -h \; send-keys cd\ ~/diary C-m C-l\; send-keys v\ ~/diary/$(date "+%Y/%m/%d.md") C-m\; selectp -t 1 \; splitw -v \; send-keys cd\ ~/Developer C-m C-l\; selectp -t 1 \; new-window -n work \;  splitw -h \; send-keys cd\ ~/Documents C-m C-l\; selectp -t 1 \; selectw -t 1
+                tmux -f <(echo "$tmux_config") new-session -n routine \; selectp -t 1 \; send-keys cd\ ~/dotfiles C-m C-l\; splitw -v \; send-keys cd\ ~/Developer C-m C-l\; selectp -t 1 \; new-window -n work-home \; new-window -n work-downloads \;  send-keys cd\ ~/Downloads C-m C-l\; selectw -t 1
             else
                 tmux new-session \; selectp -t 1 \; splitw -h \; selectp -t 1 \; splitw -v \; selectp -t 1
             fi
