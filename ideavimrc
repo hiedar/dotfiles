@@ -5,6 +5,9 @@ set ignorecase
 set number
 set relativenumber
 
+" incremental search
+set incsearch
+
 " clipboard
 set clipboard=unnamed
 
