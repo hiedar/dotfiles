@@ -3,6 +3,7 @@ alias scm="cd ~/Developer/scm"
 alias sam="cd ~/Developer/sample"
 alias p="pbcopy"
 alias a="atom"
+alias t="tmux"
 
 # tmux
 alias tmks="tmux kill-session"
