@@ -24,3 +24,8 @@ nmap L Lzz
 noremap <C-l>   zz
 noremap <C-h>   ^
 nnoremap Y y$
+
+nnoremap s o<C-c>
+nnoremap <C-a> ^
+nnoremap <C-e> $
+
