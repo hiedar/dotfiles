@@ -67,8 +67,8 @@ remapKey({"ctrl"}, "b", keyCode("left"))
 -- remapKey({"ctrl"}, "e", keyCode("right", {"cmd"}))
 --
 -- -- Cursor with shift
-remapKey({"ctrl", "cmd"}, "e", keyCode("right", {"ctrl"}))
-remapKey({"ctrl", "cmd"}, "a", keyCode("left", {"ctrl"}))
+remapKey({"ctrl", "cmd"}, "e", keyCode("right", {"shift", "cmd"}))
+remapKey({"ctrl", "cmd"}, "a", keyCode("left", {"shift", "cmd"}))
 --
 -- -- Around Exposé
 remapKey({"ctrl", "cmd"}, "p", keyCode("up", {"ctrl"}))
