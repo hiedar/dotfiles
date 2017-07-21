@@ -49,7 +49,7 @@ augroup vimrcEx
     \ endif
 
   " Set syntax highlighting for specific file types
-  autocmd BufRead,BufNewFile Appraisals set filetype=ruby
+  autocmd BufRead,BufNewFile {Appraisals,Fastfile,Matchfile} set filetype=ruby
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   autocmd BufRead,BufNewFile *.swift set filetype=swift
   autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json

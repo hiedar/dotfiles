@@ -2,4 +2,8 @@
 " https://github.com/itchyny/lightline.vim
 Plug 'itchyny/lightline.vim'
 
+" https://github.com/rcmdnk/vim-markdown
+Plug 'godlygeek/tabular'
+Plug 'joker1007/vim-markdown-quote-syntax'
+Plug 'rcmdnk/vim-markdown'
 

@@ -67,8 +67,8 @@ remapKey({"ctrl"}, "b", keyCode("left"))
 -- remapKey({"ctrl"}, "e", keyCode("right", {"cmd"}))
 --
 -- -- Cursor with shift
-remapKey({"ctrl", "cmd"}, "e", keyCode("right", {"shift", "cmd"}))
-remapKey({"ctrl", "cmd"}, "a", keyCode("left", {"shift", "cmd"}))
+-- remapKey({"ctrl", "cmd"}, "e", keyCode("right", {"shift", "cmd"}))
+-- remapKey({"ctrl", "cmd"}, "a", keyCode("left", {"shift", "cmd"}))
 --
 -- -- Around Exposé
 remapKey({"ctrl", "cmd"}, "p", keyCode("up", {"ctrl"}))
@@ -97,6 +97,10 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
   hs.execute("open -a iTerm; osascript -e 'tell application \"System Events\" to key code 102'")
 end)
 
+-- open Atom
+hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
+  hs.execute("open -a Atom;")-- osascript -e 'tell application \"System Events\" to key code 102'")
+end)
 
 local VK_G = 0x5
 local VK_ESC = 0x35
