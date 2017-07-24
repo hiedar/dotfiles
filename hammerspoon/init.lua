@@ -97,11 +97,6 @@ hs.hotkey.bind({'cmd', 'ctrl'}, 't', function()
   hs.execute("open -a iTerm; osascript -e 'tell application \"System Events\" to key code 102'")
 end)
 
--- open Atom
-hs.hotkey.bind({'cmd', 'ctrl'}, 'a', function()
-  hs.execute("open -a Atom;")-- osascript -e 'tell application \"System Events\" to key code 102'")
-end)
-
 local VK_G = 0x5
 local VK_ESC = 0x35
 local VK_H = 0x4
@@ -115,6 +110,12 @@ local VK_DELETE = 0x75
 local VK_FN = 0x3f
 local VK_ESC = 0x35
 local VK_GRAV = 0x32
+local VK_LEFTCOMMAND = 0x37
+local VK_RIGHTCOMMAND = 0x36
+local VK_EISUU = 0x66
+local VK_KANA = 0x68
+
+local prevKeyCode
 
 -- --local log = hs.logger.new("keyhook","debug")
 function flagsMatches(flags, modifiers)
@@ -177,3 +178,30 @@ myKeyboardFilter = hs.eventtap.new({
 end)
 myKeyboardFilter:start()
 
+-- http://mizoguche.info/2017/01/hammerspoon_for_sierra/
+local function keyStroke(modifiers, character)
+  hs.eventtap.keyStroke(modifiers, character)
+end
+
+local function jp()
+  keyStroke({}, VK_KANA)
+end
+
+local function eng()
+  keyStroke({}, VK_EISUU)
+end
+
+local function handleEvent(e)
+  local keyCode = e:getKeyCode()
+  local isCmdKeyUp = not(e:getFlags()['cmd']) and e:getType() == hs.eventtap.event.types.flagsChanged
+    if isCmdKeyUp and prevKeyCode == VK_LEFTCOMMAND then
+      eng()
+    elseif isCmdKeyUp and prevKeyCode == VK_RIGHTCOMMAND then
+      jp()
+    end
+
+  prevKeyCode = keyCode
+end
+
+eventtap = hs.eventtap.new({hs.eventtap.event.types.flagsChanged, hs.eventtap.event.types.keyDown, hs.eventtap.event.types.keyUp}, handleEvent)
+eventtap:start()
