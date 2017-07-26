@@ -4,6 +4,7 @@ alias sam="cd ~/Developer/sample"
 alias p="pbcopy"
 alias a="atom"
 alias t="tmux"
+alias today="cd ~/diary; vim `date +\"%Y/%m/%d\".md`"
 
 # tmux
 alias tmks="tmux kill-session"
