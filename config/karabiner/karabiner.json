@@ -1,7 +1,7 @@
 {
     "global": {
         "check_for_updates_on_startup": true,
-        "show_in_menu_bar": true,
+        "show_in_menu_bar": false,
         "show_profile_name_in_menu_bar": false
     },
     "profiles": [
@@ -491,7 +491,8 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "semicolon"                                },
+                                    "key_code": "semicolon"
+                                },
                                 "to": [
                                     {
                                         "key_code": "semicolon",
@@ -521,41 +522,40 @@
                         ]
                     },
                     {
-                      "description": "Exchange single and double quote",
-                      "manipulators": [
-                        {
-                          "from": {
-                            "key_code": "quote"
-                          },
-                          "to": [
+                        "description": "Exchange single and double quote",
+                        "manipulators": [
                             {
-                              "key_code": "quote",
-                              "modifiers": [
-                                "left_shift"
-                              ]
-                            }
-                          ],
-                          "type": "basic"
-                        },
-                        {
-                          "from": {
-                            "key_code": "quote",
-                            "modifiers": {
-                              "mandatory": [
-                                "shift"
-                              ]
-                            }
-                          },
-                          "to": [
+                                "from": {
+                                    "key_code": "quote"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "quote",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
-                              "key_code": "quote"
+                                "from": {
+                                    "key_code": "quote",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "quote"
+                                    }
+                                ],
+                                "type": "basic"
                             }
-                          ],
-                          "type": "basic"
-                        }
-                      ]
+                        ]
                     }
-
                 ]
             },
             "devices": [],
