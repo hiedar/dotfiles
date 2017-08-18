@@ -26,6 +26,9 @@ set matchtime=1
 " https://github.com/itchyny/lightline.vim
 set noshowmode
 
+" http://wonderwall.hatenablog.com/entry/2016/03/20/233018
+set pastetoggle=<F2>
+
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'mode_map': { 'c': 'NORMAL' },
