@@ -677,7 +677,7 @@
                         ]
                     },
                     {
-                      "description": "Cmd + Ctrl + Eで 行の最後まで選択",
+                        "description": "Cmd + Ctrl + Eで 行の最後まで選択",
                         "manipulators": [
                             {
                                 "from": {
@@ -706,7 +706,7 @@
                         ]
                     },
                     {
-                      "description": "Cmd + Ctrl + Aで 行の最初まで選択",
+                        "description": "Cmd + Ctrl + Aで 行の最初まで選択",
                         "manipulators": [
                             {
                                 "from": {
@@ -728,32 +728,6 @@
                                             "left_shift",
                                             "left_command"
                                         ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Single hit ctrl is changing input source",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_control",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f11"
                                     }
                                 ],
                                 "type": "basic"
