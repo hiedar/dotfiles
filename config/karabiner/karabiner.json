@@ -936,12 +936,27 @@
                         "escape": "grave_accent_and_tilde",
                         "grave_accent_and_tilde": "delete_or_backspace"
                     }
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": {},
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 273,
+                        "vendor_id": 2131
+                    },
+                    "ignore": false,
+                    "simple_modifications": {
+                        "left_command": "left_option",
+                        "left_option": "left_command"
+                    }
                 }
             ],
             "fn_function_keys": {
                 "f1": "display_brightness_decrement",
                 "f10": "mute",
-                "f11": "volume_decrement",
+                "f11": "f11",
                 "f12": "volume_increment",
                 "f2": "display_brightness_increment",
                 "f3": "mission_control",
