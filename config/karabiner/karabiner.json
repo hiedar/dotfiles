@@ -79,6 +79,27 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "caps_lock",
+                                            "shift",
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "g",
                                     "modifiers": {
                                         "mandatory": [
@@ -913,9 +934,7 @@
                     "ignore": false,
                     "simple_modifications": {
                         "escape": "grave_accent_and_tilde",
-                        "fn": "left_option",
-                        "grave_accent_and_tilde": "delete_or_backspace",
-                        "right_option": "fn"
+                        "grave_accent_and_tilde": "delete_or_backspace"
                     }
                 }
             ],
@@ -937,6 +956,7 @@
             "selected": true,
             "simple_modifications": {
                 "caps_lock": "left_control",
+                "right_option": "escape",
                 "right_shift": "left_option"
             },
             "virtual_hid_keyboard": {
