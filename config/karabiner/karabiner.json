@@ -8,7 +8,7 @@
         {
             "complex_modifications": {
                 "parameters": {
-                    "basic.to_if_alone_timeout_milliseconds": 1000
+                    "basic.to_if_alone_timeout_milliseconds": 200
                 },
                 "rules": [
                     {
@@ -73,6 +73,54 @@
                                 "to": [
                                     {
                                         "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "caps_lock",
+                                            "shift",
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "caps_lock",
+                                            "shift",
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "x",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -958,7 +1006,7 @@
                 "f10": "mute",
                 "f11": "f11",
                 "f12": "volume_increment",
-                "f2": "display_brightness_increment",
+                "f2": "f2",
                 "f3": "mission_control",
                 "f4": "launchpad",
                 "f5": "illumination_decrement",
