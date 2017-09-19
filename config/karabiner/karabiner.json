@@ -779,11 +779,11 @@
                         ]
                     },
                     {
-                        "description": "Cmd + Ctrl + Fで 次の行まで選択",
+                        "description": "Cmd + Ctrl + Aで 行の最初まで選択",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "f",
+                                    "key_code": "a",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_command",
@@ -796,9 +796,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_arrow",
+                                        "key_code": "left_arrow",
                                         "modifiers": [
-                                            "left_shift"
+                                            "left_shift",
+                                            "left_command"
                                         ]
                                     }
                                 ],
@@ -835,11 +836,39 @@
                         ]
                     },
                     {
-                        "description": "Cmd + Ctrl + Bで 次の行まで選択",
+                        "description": "Cmd + Ctrl + Fで 次の文字まで選択",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd + Ctrl + Bで 前の文字まで選択",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "b",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_command",
@@ -863,14 +892,43 @@
                         ]
                     },
                     {
-                        "description": "Cmd + Ctrl + Aで 行の最初まで選択",
+                        "description": "Option + Ctrl + Fで 次の単語まで選択",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "a",
+                                    "key_code": "f",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command",
+                                            "left_option",
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "left_shift",
+                                            "left_option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Option + Ctrl + Bで 前の単語まで選択",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_option",
                                             "control"
                                         ],
                                         "optional": [
@@ -883,7 +941,7 @@
                                         "key_code": "left_arrow",
                                         "modifiers": [
                                             "left_shift",
-                                            "left_command"
+                                            "left_option"
                                         ]
                                     }
                                 ],
@@ -1073,6 +1131,14 @@
                     "simple_modifications": [
                         {
                             "from": {
+                                "key_code": "delete_or_backspace"
+                            },
+                            "to": {
+                                "key_code": "backslash"
+                            }
+                        },
+                        {
+                            "from": {
                                 "key_code": "escape"
                             },
                             "to": {
@@ -1089,10 +1155,10 @@
                         },
                         {
                             "from": {
-                                "key_code": "delete_or_backspace"
+                                "key_code": "right_option"
                             },
                             "to": {
-                                "key_code": "backslash"
+                                "key_code": "fn"
                             }
                         }
                     ]
@@ -1241,14 +1307,6 @@
                     },
                     "to": {
                         "key_code": "left_control"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "right_option"
-                    },
-                    "to": {
-                        "key_code": "escape"
                     }
                 },
                 {
