@@ -1032,7 +1032,7 @@
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "key_code": "f11"
+                                        "key_code": "lang2"
                                     }
                                 ],
                                 "type": "basic"
