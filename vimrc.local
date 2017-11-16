@@ -12,8 +12,6 @@ noremap <C-l>   zz
 noremap <C-h>   ^
 
 nnoremap s :<C-u>call append(expand('.'), '')<Cr>j
-nnoremap <C-a> ^
-nnoremap <C-e> $
 
 " auto cr を解除
 set tw=0
