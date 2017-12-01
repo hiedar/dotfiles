@@ -8,4 +8,4 @@ export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
 
 export GITHUB_USER=r-hieda
-export GITHUB_TOKEN=9efb6a4aff8bb58797477691e6c05e16415a175d
+export GITHUB_TOKEN=b786a9bd2278078889e2fbebfff53feae33ae2b0
