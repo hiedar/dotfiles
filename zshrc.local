@@ -7,5 +7,3 @@ export PATH="/usr/local/opt/php71/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
 
-export GITHUB_USER=r-hieda
-export GITHUB_TOKEN=4737151a195adb0677cab3338ab0afe667e78df2
