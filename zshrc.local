@@ -7,3 +7,5 @@ export PATH="/usr/local/opt/php71/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
 
+export LC_ALL=ja_JP.UTF-8
+export LANG=ja_JP.UTF-8
