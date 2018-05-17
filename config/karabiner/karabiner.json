@@ -1245,7 +1245,7 @@
                           },
                           "to": [
                               {
-                                  "shell_command": "open ~"
+                                  "shell_command": "open ~/Downloads"
                               }
                           ],
                           "conditions": [
