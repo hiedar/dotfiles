@@ -1253,7 +1253,8 @@
                                   "type": "frontmost_application_unless",
                                   "bundle_identifiers": [
                                       "^com\\.microsoft\\.rdc\\.osx",
-                                      "^com\\.microsoft\\.rdc\\.macos"
+                                      "^com\\.microsoft\\.rdc\\.macos",
+                                      "^com\\.toggl\\.toggldesktop\\.TogglDesktop"
                                   ]
                               }
                           ],
