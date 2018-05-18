@@ -1254,6 +1254,7 @@
                                   "bundle_identifiers": [
                                       "^com\\.microsoft\\.rdc\\.osx",
                                       "^com\\.microsoft\\.rdc\\.macos",
+                                      "^com\\.jetbrains\\.AppCode",
                                       "^com\\.toggl\\.toggldesktop\\.TogglDesktop"
                                   ]
                               }
