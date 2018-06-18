@@ -901,6 +901,31 @@
                         ]
                     },
                     {
+                        "description": "Cmd + Ctrl + Mで Remember the milk開く",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'remember the milk'; osascript -e 'tell application \"System Events\" to key code 102'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Cmd + Ctrl + Eで 行の最後まで選択",
                         "manipulators": [
                             {
