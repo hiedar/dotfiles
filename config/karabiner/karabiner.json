@@ -876,6 +876,31 @@
                         ]
                     },
                     {
+                        "description": "Cmd + Ctrl + Cで Chrome開く",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Google Chrome'; osascript -e 'tell application \"System Events\" to key code 102'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Cmd + Ctrl + Eで 行の最後まで選択",
                         "manipulators": [
                             {
