@@ -876,11 +876,11 @@
                         ]
                     },
                     {
-                        "description": "Cmd + Ctrl + Cで Chrome開く",
+                        "description": "Cmd + Ctrl + Pで Chrome開く",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "c",
+                                    "key_code": "p",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_command",
