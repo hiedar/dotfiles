@@ -1302,42 +1302,7 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                      "description": "Command + E で Finderを起動する(RDC除く)",
-                      "manipulators": [
-                        {
-                          "from": {
-                              "key_code": "e",
-                              "modifiers": {
-                                  "mandatory": [
-                                      "left_command"
-                                  ],
-                                  "optional": [
-                                      "any"
-                                  ]
-                              }
-                          },
-                          "to": [
-                              {
-                                  "shell_command": "open ~/Downloads"
-                              }
-                          ],
-                          "conditions": [
-                              {
-                                  "type": "frontmost_application_unless",
-                                  "bundle_identifiers": [
-                                      "^com\\.microsoft\\.rdc\\.osx",
-                                      "^com\\.microsoft\\.rdc\\.macos",
-                                      "^com\\.jetbrains\\.AppCode",
-                                      "^com\\.toggl\\.toggldesktop\\.TogglDesktop"
-                                  ]
-                              }
-                          ],
-                          "type": "basic"
-                        }
-                      ]
-                  }
+                    }
                 ]
             },
             "devices": [
