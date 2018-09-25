@@ -1,7 +1,8 @@
-export XCODE_INSTALL_USER=hieda@cocoarium.com
+export XCODE_INSTALL_USER=ryuichi.hieda@festil.jp
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="/usr/local/opt/php71/bin:$PATH"
+export PATH="/Users/hiedar/Library/Android/sdk/platform-tools:$PATH"
 
 export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
