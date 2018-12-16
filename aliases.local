@@ -7,6 +7,8 @@ alias t="tmux"
 alias today="cd ~/diary; vim `date +\"%Y/%m/%d\".md`"
 alias date="date +\"%Y/%m/%d\""
 alias his="history"
+alias proj="/Users/hiedar/CloudStorage/OneDrive\ -\ フェスティル合同会社/Projects"
+alias prj="/Users/hiedar/CloudStorage/OneDrive\ -\ フェスティル合同会社/Projects"
 
 # tmux
 alias tmks="tmux kill-session"
