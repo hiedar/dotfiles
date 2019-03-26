@@ -9,6 +9,7 @@ alias date="date +\"%Y/%m/%d\""
 alias his="history"
 alias proj="/Users/hiedar/CloudStorage/OneDrive\ -\ フェスティル合同会社/Projects"
 alias prj="/Users/hiedar/CloudStorage/OneDrive\ -\ フェスティル合同会社/Projects"
+alias curl="curl -x http://proxy.jpn.hp.com:8080/"
 
 # tmux
 alias tmks="tmux kill-session"
