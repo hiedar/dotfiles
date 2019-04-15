@@ -1,5 +1,5 @@
 export XCODE_INSTALL_USER=ryuichi.hieda@festil.jp
-export JAVA_HOME=/Applications/"Android Studio.app"/Contents/jre/jdk/Contents/Home
+export JAVA_HOME=/private/var/folders/cw/22bb2r9n2ts9jq0d13355t300000gn/T/AppTranslocation/E0022B99-1E81-432F-B873-ED38E9FD8D1B/d/"Android Studio.app"/Contents/jre/jdk/Contents/Home
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="/usr/local/opt/php71/bin:$PATH"
@@ -14,3 +14,5 @@ export NODE_PATH=$(npm root -g)
 
 export LC_ALL=ja_JP.UTF-8
 export LANG=ja_JP.UTF-8
+
+export LSCOLORS=Cxfxcxdxbxegedabagacad
