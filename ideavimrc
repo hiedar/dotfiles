@@ -11,6 +11,9 @@ set incsearch
 " clipboard
 set clipboard=unnamed
 
+" Surround
+set surround
+
 " keyremap
 nmap n nzz
 nmap N Nzz
