@@ -904,11 +904,11 @@
                         ]
                     },
                     {
-                        "description": "Cmd + Ctrl + Bで Bear開く",
+                      "description": "Cmd + Ctrl + Iで Bear開く",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "b",
+                                    "key_code": "i",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_command",
@@ -933,7 +933,7 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "c",
+                                    "key_code": "p",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_command",
@@ -1090,34 +1090,6 @@
                         ]
                     },
                     {
-                        "description": "Cmd + Ctrl + Pで 前の行まで選択",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "p",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command",
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Cmd + Ctrl + Fで 次の文字まで選択",
                         "manipulators": [
                             {
@@ -1136,34 +1108,6 @@
                                 "to": [
                                     {
                                         "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd + Ctrl + Bで 前の文字まで選択",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "b",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command",
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
                                         "modifiers": [
                                             "left_shift"
                                         ]
