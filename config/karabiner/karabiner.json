@@ -854,6 +854,31 @@
                         ]
                     },
                     {
+                        "description": "Cmd + Ctrl + Dで Developer Folder 開く",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open ~/Developer"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Cmd + Ctrl + Lで Launchpad開く",
                         "manipulators": [
                             {
