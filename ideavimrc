@@ -30,3 +30,4 @@ nnoremap Y y$
 
 nnoremap s o<C-c>
 
+set ideajoin
